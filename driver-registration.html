@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Driver Registration</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="form-container">
+
+<form id="driverRegisterForm" class="form-box">
+
+    <h2>Driver Registration</h2>
+
+    <input type="text" id="driverName" placeholder="Driver Name" required>
+
+    <input type="email" id="driverEmail" placeholder="Email" required>
+
+    <input type="tel" id="driverPhone" placeholder="Phone Number" required>
+
+    <input type="number" id="driverExperience" placeholder="Driving Experience (Years)" required>
+
+    <input type="text" id="license" placeholder="Driving License Number" required>
+
+    <input type="text" id="vehicle" placeholder="Vehicle Type" required>
+
+    <input type="text" id="location" placeholder="Location" required>
+
+    <select id="availability">
+        <option value="Available">Available</option>
+        <option value="Busy">Busy</option>
+        <option value="Offline">Offline</option>
+    </select>
+
+    <button type="submit" class="btn">Register as Driver</button>
+
+</form>
+
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ratings & Reviews</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="form-container">
+
+<form id="ratingForm" class="form-box">
+
+    <h2>Rate Your Driver</h2>
+
+    <input type="text" id="ratingDriver"
+           placeholder="Driver Name" required>
+
+    <select id="rating" required>
+        <option value="">Select Rating</option>
+        <option value="5">⭐⭐⭐⭐⭐ 5</option>
+        <option value="4">⭐⭐⭐⭐ 4</option>
+        <option value="3">⭐⭐⭐ 3</option>
+        <option value="2">⭐⭐ 2</option>
+        <option value="1">⭐ 1</option>
+    </select>
+
+    <textarea id="review"
+              placeholder="Write your review..."
+              required></textarea>
+
+    <button type="submit" class="btn">
+        Submit Review
+    </button>
+
+</form>
+
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>

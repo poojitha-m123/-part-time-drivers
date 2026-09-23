@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Driver</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="form-container">
+
+<form id="bookingForm" class="form-box">
+
+    <h2>Book Driver</h2>
+
+    <input type="text" id="bookingDriver" readonly>
+
+    <label>Booking Date</label>
+    <input type="date" id="bookingDate" required>
+
+    <label>Start Time</label>
+    <input type="time" id="startTime" required>
+
+    <label>End Time</label>
+    <input type="time" id="endTime" required>
+
+    <input type="text" id="pickup"
+           placeholder="Pickup Location" required>
+
+    <input type="text" id="destination"
+           placeholder="Destination" required>
+
+    <select id="paymentMethod" required>
+        <option value="">Select Payment Method</option>
+        <option value="Cash">Cash</option>
+        <option value="UPI">UPI</option>
+        <option value="Card">Card</option>
+    </select>
+
+    <button type="submit" class="btn">
+        Confirm Booking
+    </button>
+
+</form>
+
+</div>
+
+<script src="js/script.js"></script>
+
+<script>
+    loadBookingDriver();
+</script>
+
+</body>
+</html>

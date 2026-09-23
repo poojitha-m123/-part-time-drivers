@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Driver Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>🚗 Driver Dashboard</h1>
+
+    <div class="dashboard-grid">
+
+        <div class="dashboard-card">
+            <h3>Availability</h3>
+
+            <select id="driverStatus"
+                    onchange="updateDriverStatus()">
+
+                <option value="Available">Available</option>
+                <option value="Busy">Busy</option>
+                <option value="Offline">Offline</option>
+
+            </select>
+        </div>
+
+        <div class="dashboard-card">
+            <h3>Bookings</h3>
+            <p id="driverBookingCount">0</p>
+        </div>
+
+        <div class="dashboard-card">
+            <h3>Notifications</h3>
+            <p id="driverNotificationCount">0</p>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="js/script.js"></script>
+
+<script>
+    loadDriverDashboard();
+</script>
+
+</body>
+</html>

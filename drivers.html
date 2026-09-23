@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Drivers</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+<nav class="navbar">
+    <div class="logo">🚗 Part-Time Driver</div>
+
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="my-bookings.html">My Bookings</a>
+        <a href="notifications.html">Notifications</a>
+    </div>
+</nav>
+</header>
+
+<div class="container">
+
+    <h2>Find a Driver</h2>
+
+    <div class="search-box">
+
+        <input type="text"
+               id="searchDriver"
+               placeholder="Search by name or location">
+
+        <select id="filterAvailability">
+            <option value="All">All Drivers</option>
+            <option value="Available">Available</option>
+            <option value="Busy">Busy</option>
+            <option value="Offline">Offline</option>
+        </select>
+
+        <button onclick="displayDrivers()" class="btn">
+            Search
+        </button>
+
+    </div>
+
+    <div id="driversList" class="driver-grid"></div>
+
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
